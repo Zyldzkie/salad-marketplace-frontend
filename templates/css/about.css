@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    background-image: url(../assets/common/img/salad-background.png);
+    height: 10000px;
+}
+
+/* UNIVERSAL HEADER */
+
+/* Containers */
+#UH{
+    background-color: #3f7419;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border: solid;
+
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#left-section{
+    margin: 10px;
+}
+
+#right-section{
+    display: flex;
+    align-items: center;
+}
+
+/* Buttons */
+
+#logo{
+    width: 280px;
+}
+
+.UH-buttons{
+    width: 20px;
+    padding: 5px;
+
+    border-radius: 100px;
+    border: solid;
+    border-color: white;
+}
+
+.right-section-partition{
+    margin-right: 20px;
+}
+
+/* UP UNTIL HERE */
