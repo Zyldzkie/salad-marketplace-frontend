@@ -1,0 +1,99 @@
+body{
+    background-image: url('../assets/salad-background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 8;
+    overflow: hidden;
+    background-color: #3f7419;
+}
+
+li{
+    float: right;
+}
+
+a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #e8a20a;
+}
+
+h2{
+    text-align: center;
+    margin-bottom:2;
+}
+
+h6{
+    text-align: center;
+    margin-bottom:0;
+    margin-top: 0;
+}
+
+div{
+    padding: 16px;
+    text-align: center;
+}
+
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+button {
+    background-color: #3f7419;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    align-items: center;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+label{
+    font-size: 20px;
+    text-align: left;
+}
+input{
+    font-size: 15px;
+    text-align: left; 
+}
+
+.container{
+
+    text-align: left;
+
+}
+.container .input{
+    border: 3px solid #3f7419;
+
+}
+#signup{
+    
+    width: 100%;
+}
+
+.container .signup{
+    display: inline-center;
+    
+}
