@@ -1,40 +1,48 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="../css/signup-signin.css">
-        <link rel="icon" type="image/x-icon" href="salad-logo.png">
-        <title>
-            SALAD Navotenos
-        </title>
-    </head>
-    <body>
-        <font face="Helvetica" size="5px">
+<head>
+    <link rel="stylesheet" href="../css/signup-signin.css">
+    <link rel="icon" type="image/x-icon" href="../assets/common/img/salad-logo.png">
+    <title>
+        SALAD Navotenos
+    </title>
+</head>
+<script defer src="../js/signup.js"></script>
+<body>
+        <font face="Helvetica" size="5px" >
             <ul>
                 <li style="float:left"><a href="salad-name">SALAD Navotenos</a></li>
-                
             </ul>
             <h2>Create New Account</h2>
-            <h6 style="display: inline-center;">Already Registered? <a href="signin.html" style=" display: inline; color:#166802">Login</a></h6>
-            
-            <div class="container"  style=" margin: 0 auto; max-width: 300px; display: inline-center;">
-                
-                <label for="name" style="width: 100px; display: inline-block;"><b>Name</b></label><br>
-                <input class="input" type="text" placeholder="Enter Name" name="name" style="width: 300px;" required><br>
-            
+            <h6 style="display: inline-center;">Already Registered? <a href="signin.html"
+                    style=" display: inline; color:#166802">Login</a></h6>
+
+            <div class="container" style=" margin: 0 auto; max-width: 300px; display: inline-center;">
+
+                <label for="username" style="width: 100px; display: inline-block;"><b>Username</b></label><br>
+                <input id="username" pattern="^[a-zA-Z0-9_.-]*$" class="input" type="text" placeholder="Enter Name" name="Username" style="width: 300px;"
+                    required>
+                    <div id="errorUsername" class="error"></div>
 
                 <label for="email" style="width: 100px; display: inline-block;"><b>Email</b></label><br>
-                <input class="input" type="text" placeholder="Enter Email" name="email" style="width: 300px;" required><br>
+                <input id="email" class="input" type="email" placeholder="Enter Email" name="email" style="width: 300px;"
+                    required>
+                    <div id="errorEmail" class="error"></div>
 
                 <label for="psw" style="width: 100px; display: inline-block;"><b>Password</b></label><br>
-                <input class="input" type="password" placeholder="Enter Password" name="psw" style="width: 300px;" required><br>
-                  
-                <label for="psw" style="width: 200px; display: inline-block;"><b>Confirm Password</b></label><br>
-                <input class="input" type="password" placeholder="Confirm Password" name="psw" style="width: 300px;" required><br>
+                <input id="psw" class="input" type="password" placeholder="Enter Password" name="psw"
+                    style="width: 300px;" required>
+                    <div id="errorpsw" class="error"></div>
+
+                <label for="cpsw" style="width: 200px; display: inline-block;"><b>Confirm Password</b></label><br>
+                <input id="cpsw" class="input" type="password" placeholder="Confirm Password" name="psw"
+                    style="width: 300px;" required>
+                    <div id="errorcpsw" class="error"></div>
 
                 <div class="signup">
-                    <button id="signup" style="margin: 0 auto;" type="submit" >Sign Up</button><br>
+                    <button id="signup" style="margin: 0 auto;" type="submit">Sign Up</button><br>
                 </div>
+                <div id="error"></div>
             </div>
-            
         </font>
-    </body>
+</body>
 </html>
