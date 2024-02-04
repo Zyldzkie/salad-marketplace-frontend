@@ -1,14 +1,16 @@
 <html>
     <head>
+        <script defer src="../js/signin.js"></script>
         <link rel="stylesheet" href="../css/signup-signin.css">
         <link rel="icon" type="image/x-icon" href="salad-logo.png">
         <title>
             SALAD Navotenos
         </title>
     </head>
-    <script defer src="signin.js"></script>
+    
     <body>
         <font face="Helvetica" size="5px">
+            <form id="form">
             <ul>
                 <li style="float:left"><a href="salad-name">SALAD Navotenos</a></li>
                 
@@ -19,19 +21,23 @@
             <div class="container"  style=" margin: 0 auto; max-width: 300px; display: inline-center;">
 
                 <label for="email" style="width: 300px; display: inline-block;"><b>Email or Username</b></label><br>
-                <input class="input" type="text" placeholder="Enter Email or Username" name="email" style="width: 300px;" ><br>
+                <input id="email" class="input" type="text" placeholder="Enter Email or Username" name="email" style="width: 300px;" required><br>
+
+                <div id="erroremail" class="error"></div>
 
                 <label for="psw" style="width: 100px; display: inline-block;"><b>Password</b></label><br>
-                <input class="input" type="password" placeholder="Enter Password" name="psw" style="width: 300px;" ><br>
-                  
+                <input id="psw" class="input" type="password" placeholder="Enter Password" name="psw" style="width: 300px;" required><br>
+                <div id="errorpsw" class="error"></div>  
+
                 <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                   </label>
 
                 <div class="signup">
-                    <button id="signup" style="margin: 0 auto;" type="submit" ><a href="home.html">Login</a></button><br>
+                    <button id="signup" style="margin: 0 auto;" type="submit" ><a>Login</a></button><br>
                 </div>
-
+                <div id="error"></div>
+            </form>
             </div>
         </font>
     </body>
