@@ -23,7 +23,7 @@ form.addEventListener('submit', (e) => {
 
     if (username.value.length <6) {
         messages.push("Username is too short. Minimum of 6 characters")
-        errorUsername.innerHTML = "<h3>Username is too long.</h3>"
+        errorUsername.innerHTML = "<h3>Username is too short.</h3>"
         if (errorUsername.style.display === "none") {
             errorUsername.style.display = "block";
         } else {
