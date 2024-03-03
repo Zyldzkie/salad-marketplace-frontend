@@ -6,8 +6,8 @@ const errorpsw = document.getElementById('errorpsw');
 const errorDiv = document.getElementById('error');
 
 // Example user pass
-var usernamesample = 'exampleuser';
-var passwordsample = 'examplepassword';
+var usernamesample = 'jrandell12';
+var passwordsample = 'randell12';
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
