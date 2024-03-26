@@ -171,3 +171,14 @@ main .right-content h6{
     grid-row: 13;
     margin: 0px 8px;
 } 
+
+main .adsbanner{
+    margin-top: 10px;
+    grid-column: span 12;
+    box-shadow: 8px 8px 5px rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+main .adsbanner img{
+    width: 100%;
+}
