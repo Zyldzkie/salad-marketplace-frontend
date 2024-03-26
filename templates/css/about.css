@@ -53,4 +53,11 @@ body{
     margin-right: 20px;
 }
 
+.header{
+    background-size: cover;
+    display: flex;
+    max-width: max-content;
+    max-height: max-content;
+}
+
 /* UP UNTIL HERE */
