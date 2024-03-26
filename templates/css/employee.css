@@ -1,0 +1,202 @@
+
+body {
+	margin: 0;
+	font-family: georgia;
+	background: #373E40;
+	color: white;
+	font-size: 14px;
+}
+
+p {
+	line-height: 2;
+}
+
+h1, h2 {
+	font-family: "Orbitron";
+	letter-spacing: 5px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a.isactive {
+    border-bottom: 5px solid cyan;
+    padding-bottom: 5px; 
+    margin-bottom: -3px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 50px;
+	width: 100%;
+}
+
+header {
+	background: #305252;
+	align-items: center;
+	width: 100%;
+}
+
+header h1 {
+	grid-column: span 5;
+	padding-left: 40px;
+}
+
+header .search-input {
+	grid-column: 6 / span 2;
+	padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+header nav {
+	grid-column: 8 / span 5;
+	justify-self: end;
+	align-self: center;
+}
+
+header nav a {
+	color: white;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+main {
+	max-width: 90%;
+	margin: 30px auto;
+	padding: 20px 50px;
+	width: 90%;
+	box-sizing: border-box;
+}
+
+main img {
+	display: block;
+	grid-column: 1 /span 6;
+	width: 100%;
+	border-radius: 8px;
+}
+
+main .welcome {
+	grid-column: 7 / span 6;
+	align-self: center;
+}
+
+main .welcome p {
+	text-align: justify;
+}
+
+main .section {
+	grid-column: 3 / span 8;
+	text-align: center;
+	background: #305252;
+	border-radius: 20px;
+}
+
+main .cards {
+	grid-column: span 3;
+	background: #407677;
+	border-radius: 8px;
+	text-align: center;
+	
+}
+
+main .cards p {
+	padding: 0px 20px;
+	text-align: justify;
+}
+
+main .cards h3 {
+	text-align: center;
+}
+
+main .big-cards {
+	grid-column: span 6;
+	background: #407677;
+	border-radius: 8px;
+}
+
+main .big-cards p {
+	padding: 0px 20px;
+	text-align: justify;
+}
+
+main .big-cards h3 {
+	text-align: center;
+}
+
+main .list-cards {
+	grid-column: span 3;
+	background: #407677;
+	border-radius: 8px;
+}
+
+main .list-cards p {
+	padding: 0px 20px;
+	text-align: justify;
+}
+
+main .list-cards h3 {
+	text-align: center;
+}
+
+footer {
+	max-width: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	background: #305252;
+}
+
+footer h5 {
+	grid-column: span 12;
+}
+.title{
+	grid-column: span 12;
+	text-align: center;
+}
+
+.item-name {
+	padding-right: 30px;
+	padding-left: 30px;
+	display: flex;
+    justify-content: space-between;
+}
+.cinfo{
+	padding-right: 30px;
+	padding-left: 30px;
+	display: flex;
+    justify-content: space-between;
+}
+#orderdone {
+    background-color: #3f7419;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	grid-column: span 1;
+	border-radius: 0px 0px 0px 10px;
+  }
+#cancelorder{
+	background-color: #ff0800;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	grid-column: span 1;
+	border-radius: 0px 0px 10px 0px;
+}
+.button{
+	grid-template-columns: repeat(2, 1fr);
+	width: 100%;
+	display: grid;
+	
+}
