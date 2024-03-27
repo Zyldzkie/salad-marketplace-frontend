@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script defer src="../js/signin.js"></script>
+        <link rel="stylesheet" href="templates/css/signup-signin cro.css">
+        <link rel="icon" type="image/x-icon" href="salad-logo.png">
+        <title>
+            SALAD Navotenos
+        </title>
+    </head>
+    
+    <body>
+        <font face="Helvetica" size="5px">
+            <form id="form">
+            <ul>
+                <li style="float:left"><a href="salad-name">SALAD Navotenos</a></li>
+                
+            </ul>
+            <h2>Welcome Back!</h2>
+            <h6 style="display: inline-center;">Sign in.<a href="login" style=" display: inline; color:#166802"></a></h6>
+            
+            <div class="container"  style=" margin: 0 auto; max-width: 300px; display: inline-center;">
+
+                <label for="email" style="width: 300px; display: inline-block;"><b>Email or Username</b></label><br>
+                <input id="email" class="input" type="text" placeholder="Enter Email or Username" name="email" style="width: 300px;" required><br>
+
+                <div id="erroremail" class="error"></div>
+
+                <label for="psw" style="width: 100px; display: inline-block;"><b>Password</b></label><br>
+                <input id="psw" class="input" type="password" placeholder="Enter Password" name="psw" style="width: 300px;" required><br>
+                <div id="errorpsw" class="error"></div>  
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+
+                <div class="signup">
+                    <button id="signup" style="margin: 0 auto;" type="submit" ><a>Login</a></button><br>
+                </div>
+                <div id="error"></div>
+            </form>
+            </div>
+        </font>
+    </body>
+</html>
